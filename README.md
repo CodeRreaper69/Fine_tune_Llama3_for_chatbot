@@ -1,7 +1,3 @@
-Here's a structured `README.md` file for your project:
-
----
-
 # SynBot: Fine-Tuning and Inference with LLama 3 8B
 
 ## Overview
