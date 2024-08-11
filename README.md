@@ -12,7 +12,6 @@ This project demonstrates the process of fine-tuning a LLama 3 8B language model
 - [Training the Model](#training-the-model)
 - [Running Inference](#running-inference)
 - [Saving and Loading the Model](#saving-and-loading-the-model)
-- [Testing the Model](#testing-the-model)
 - [Contributing](#contributing)
 - [License](#license)
 
