@@ -183,18 +183,18 @@ This project demonstrates the process of fine-tuning a LLama 3 8B language model
 ## Saving and Loading the Model
 
 1. **Save the Model:**
-   - Save the fine-tuned model to Hugging Face's hub or locally:
+   - Save the fine-tuned model to Hugging Face's hub or locally, note that it will save the lora model adapters only, not the whole model, you have to install the base model and then again use the adapters from this repo for reusing the fine tuned model :
      ```python
      from huggingface_hub import notebook_login
      notebook_login("YOUR_HUGGINGFACE_TOKEN")
-     model.push_to_hub("GenDey/SynBot_Model", token="YOUR_HUGGINGFACE_TOKEN")
+     model.push_to_hub("your hugging face repo(E.g - GenDey/SynBot_Model", token="YOUR_HUGGINGFACE_TOKEN")
      ```
 
 2. **Load the Saved Model:**
    - Load the model for further use or deployment:
      ```python
      from transformers import AutoModelForCausalLM
-     model = AutoModelForCausalLM.from_pretrained("GenDey/SynBot_Model", low_cpu_mem_usage=False)
+     model = AutoModelForCausalLM.from_pretrained("your hugging face repo", low_cpu_mem_usage=False)
      ```
 
 ## Contributing
