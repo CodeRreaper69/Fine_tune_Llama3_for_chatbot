@@ -1,4 +1,4 @@
-# SynBot: Fine-Tuning and Inference with LLama 3 8B
+# SynBot: Fine-Tuning LLama 3 8B for production level chatbot creation
 
 ## Overview
 
@@ -130,7 +130,7 @@ This project demonstrates the process of fine-tuning a LLama 3 8B language model
      base_model_name = "unsloth/llama-3-8b-bnb-4bit"
      tokenizer = AutoTokenizer.from_pretrained(base_model_name)
      base_model = AutoModelForCausalLM.from_pretrained(base_model_name, torch_dtype=torch.float16, low_cpu_mem_usage=True)
-     model_name = "GenDey/SynBot_Model"
+     model_name = "GenDey/SynBot_Model" # this is the fine tuned Lora_adapters for the model I uploaded on hugging face link - https://huggingface.co/GenDey/SynBot_Model/tree/main 
      model = PeftModel.from_pretrained(base_model, model_name, torch_dtype=torch.float16)
      ```
 
