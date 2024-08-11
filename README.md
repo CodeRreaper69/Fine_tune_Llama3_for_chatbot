@@ -27,6 +27,22 @@ This project demonstrates the process of fine-tuning a LLama 3 8B language model
 1. **Install Dependencies:**
    - The following dependencies are required for this project. Use the provided installation commands to set up your environment:
      ```bash
+     
+      # %%capture
+      # import torch
+      # major_version, minor_version = torch.cuda.get_device_capability()
+      # !pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+      # if major_version >= 8:
+      #     !pip install --no-deps packaging ninja einops flash-attn xformers trl peft accelerate bitsandbytes
+      # else:
+      #     !pip install --no-deps xformers trl peft accelerate bitsandbytes
+      # pass
+      # #%%capture
+      # # Installs Unsloth, Xformers (Flash Attention) and all other packages!
+      # #!pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+      # !pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
+      ( # the above lines are for testing your system compatibility and installing the best resources ad optimizing it if using in colab )
+     
      pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
      pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
      ```
