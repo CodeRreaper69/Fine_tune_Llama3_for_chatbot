@@ -40,7 +40,7 @@ This project demonstrates the process of fine-tuning a LLama 3 8B language model
       # # Installs Unsloth, Xformers (Flash Attention) and all other packages!
       # #!pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
       # !pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
-      ( # the above lines are for testing your system compatibility and installing the best resources ad optimizing it if using in colab )
+      # (the above lines are for testing your system compatibility and installing the best resources ad optimizing it if using in colab )
      
      pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
      pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
